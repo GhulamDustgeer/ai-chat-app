@@ -6,8 +6,11 @@ app = FastAPI(title="Gemini AI Chat API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ai-chat-app-production-de2a.up.railway.app/",
-    "https://ai-chat-app-ten-pink.vercel.app/"],  # ← fixed this too
+    allow_origins=[
+        "http://localhost:3000",
+        "https://ai-chat-app-ten-pink.vercel.app",        
+        "https://ai-chat-app-production-de2a.up.railway.app",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
