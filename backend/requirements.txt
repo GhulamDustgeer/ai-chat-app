@@ -3,4 +3,3 @@ uvicorn
 python-dotenv
 google-genai
 supabase
-python-3.12.0
